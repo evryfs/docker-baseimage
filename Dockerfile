@@ -1,5 +1,6 @@
 FROM ubuntu:bionic
 LABEL maintainer "David J.  M. Karlsen"
-RUN apt -y install curl wget vim tcpdump && \
-	apt -y clean && \
-	rm -rf /var/lib/apt/cache
+RUN apt-get update && \
+	apt-get -y install curl wget vim tcpdump && \
+	apt-get -y clean && \
+	rm -rf /var/cache/apt
