@@ -1,4 +1,4 @@
-FROM ubuntu:bionic
+FROM ubuntu:bionic-20190515
 LABEL maintainer "David J. M. Karlsen"
 #avoid interactive dialouges from apt:
 ENV DEBIAN_FRONTEND=noninteractive LANG=C.UTF-8
