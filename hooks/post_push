@@ -1,4 +1,4 @@
 #!/bin/bash
-for BRANCH in java8 java11 java12 java13; do
+for BRANCH in java8 java11 java13; do
   echo "curl -vv -H "Content-Type: application/json" --data '{"source_type": "Branch", "source_name": "${BRANCH}"}' -X POST ${TRIGGER_URL}"
 done
