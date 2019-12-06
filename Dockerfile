@@ -1,5 +1,5 @@
 FROM ubuntu:bionic-20191029
-LABEL maintainer "David J. M. Karlsen"
+LABEL maintainer "fsdevops@evry.com"
 #avoid interactive dialouges from apt:
 ENV DEBIAN_FRONTEND=noninteractive LANG=C.UTF-8
 RUN apt-get update && \
