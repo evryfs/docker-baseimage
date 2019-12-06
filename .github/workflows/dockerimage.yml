@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - uses: brpaz/hadolint-action@master
+    - uses: brpaz/hadolint-action@v1.0.2
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag evryfs/docker-baseimage:$(date +%s)
